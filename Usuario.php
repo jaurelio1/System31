@@ -11,6 +11,38 @@ abstract class Usuario{
     protected $login;
     protected $cod;
     
+    function getNome() {
+        return $this->nome;
+    }
+
+    function getSenha() {
+        return $this->senha;
+    }
+
+    function getLogin() {
+        return $this->login;
+    }
+
+    function getCod() {
+        return $this->cod;
+    }
+
+    function setNome($nome) {
+        $this->nome = $nome;
+    }
+
+    function setSenha($senha) {
+        $this->senha = $senha;
+    }
+
+    function setLogin($login) {
+        $this->login = $login;
+    }
+
+    function setCod($cod) {
+        $this->cod = $cod;
+    }
+
     function valida_usuario($login, $senha){
         #acesso banco de dados
     }

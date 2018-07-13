@@ -11,7 +11,11 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-           
+           $u = new Administrador();
+           $u->setCod($_POST[""]);
+           $u->setLogin($_POST[""]);
+           $u->setNome($_POST[""]);
+           $u->setSenha($_POST[""]);
         ?>
     </body>
 </html>

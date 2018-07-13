@@ -11,6 +11,7 @@
  *
  * @author Joao Santos
  */
+require_once 'Usuario.php';
 class Administrador extends Usuario{
     function cadastrar_condominio(){
         

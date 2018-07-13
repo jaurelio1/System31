@@ -11,6 +11,7 @@
  *
  * @author Joao Santos
  */
+require_once 'Condominio.php';
 class Imovel extends Condominio {
     private $cod;
     private $numero;
