@@ -8,8 +8,12 @@ https://bootsnipp.com/snippets/qrXKz #seleciona administrador ou morador
 pagina de usuarios
 https://bootsnipp.com/snippets/featured/user-preferences-in-nav-bar
 https://bootsnipp.com/snippets/Qop1j
-Geração de  Graficos com javaScript:
+GeraÃ§Ã£o de  Graficos com javaScript:
 https://www.highcharts.com/demo
+
+pagina de usuario ou contato...
+https://bootsnipp.com/snippets/z45x8
+https://bootsnipp.com/snippets/qlegN
 
 <!-- classe e metodo -->
 classe Condominio {
