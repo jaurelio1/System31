@@ -32,7 +32,6 @@ Classe Usuario {
 	nome
 	senha
 	email
-	login
 	telefone
 	valida_usuario()
 	trocar_senha()
