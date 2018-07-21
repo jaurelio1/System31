@@ -15,6 +15,10 @@ pagina de usuario ou contato...
 https://bootsnipp.com/snippets/z45x8
 https://bootsnipp.com/snippets/qlegN
 
+coisas pendentes:
+pagina de usuario(administrador)
+pagina de contato
+
 <!-- classe e metodo -->
 classe Condominio {
 	cod chave primaria
@@ -33,16 +37,14 @@ Classe Usuario {
 	senha
 	email
 	telefone
+	rg
+	cpf chave primaria
+	sexo
+	data_nasc
 	valida_usuario()
 	trocar_senha()
-	cod(cnpj ou cpf) chave primaria
-	nascionalidade
-	
 }
 classe Morador herda usuario {
-	data_nasc
-	sexo
-	tilular(boolean)
 	renda
 	num_imovel chave estrageira
 	gera_boleto()
@@ -57,12 +59,10 @@ classe Imovel {
 classe contado {
 	nome
 	email
-	telefone 
 	texto
 	
 }
 classe administrador herda usuario {
-	cod_condominio chave estrageira
 	cadastra_condominio()
-	recadastra_condominio()
+	cadastra_morador()
 }
