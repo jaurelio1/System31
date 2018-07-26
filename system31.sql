@@ -1,4 +1,5 @@
 
+/*
 create schema system31;
 create table system31.administrador(
 	cod integer primary key,
@@ -10,7 +11,7 @@ create table system31.administrador(
 
 create table system31.morador(
 	cod integer primary key,
-    nome varchar(50),
+        nome varchar(50),
 	senha varchar(8),
 	nascionalidade varchar(13),
 	data_nasc date,
@@ -43,3 +44,4 @@ create table system31.contato(
 	telefone varchar(15),
 	texto varchar(200)
 );
+*/

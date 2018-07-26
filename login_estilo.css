@@ -14,9 +14,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(245, 93, 4);
+    background-color: #ea533f;
 }
-
+ 
 li {
     float: left;
 }
@@ -30,7 +30,7 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #de2f18;
 }
 .container-login {
     min-height: 0;
@@ -71,11 +71,10 @@ li a:hover {
     margin-right: 0;
     border-radius: 0;
 }
-.container-login .nav-tabs.nav-justified > .active > a,
-.container-login .nav-tabs.nav-justified > .active > a:hover,
-.container-login .nav-tabs.nav-justified > .active > a:focus {
-    background: #ffffff;
-    color: #333333;
+.container-login .nav-tabs .nav-justified > .active > a,
+.container-login .nav-tabs .nav-justified > .active > a:hover,
+.container-login .nav-tabs .nav-justified > .active > a:focus {
+    background: #333333;
 }
 .container-login .nav-tabs.nav-justified > li > a:hover,
 .container-login .nav-tabs.nav-justified > li > a:focus {

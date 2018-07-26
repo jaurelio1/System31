@@ -10,7 +10,9 @@ abstract class Usuario{
     protected $senha;
     protected $login;
     protected $cod;
+    protected $rg;
     
+            
     function getNome() {
         return $this->nome;
     }
@@ -43,7 +45,7 @@ abstract class Usuario{
         $this->cod = $cod;
     }
 
-    function valida_usuario($login, $senha){
+    function validar_usuario($login, $senha){
         #acesso banco de dados
     }
     
