@@ -17,8 +17,8 @@
     <ul>
         <li><a class="active" href="index.php">Home</a></li>
         <li><a href="cadastroUsuario.html">Cadastro</a></li>
-        <li><a href="#contact">Contato</a></li>
-        <li><a href="#about">Sobre</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="sobre1.html">Sobre</a></li>
         <li style="float:right"><a href="login.html">Login</a></li>
     </ul>
 </nav>
