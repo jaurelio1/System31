@@ -11,20 +11,25 @@
 <body>
     
         <ul class="navegador">
-            <h1>Administrador</h1>
-            <div class="lista"></div>
+                <h1>Administrador</h1>
                 <li><a class="lista" href="paginaAdm.html">Inicial</a></li>
                 <li>
-                    <a class="lista" onclick="botao()" href="#informacao">Informação</a>
+                    <a class="lista" onclick="botao('l','d')" href="#informacao">Informação</a>
                    <ul>
                         <li id="l" class="sublista"><a class="lista" href="confAdm.html">Configuração</a></li>
                         <li id="d" class="sublista"><a class="lista" href="#dados">Dados de usuario</a></li>
                     </ul>
                 </li>
                 <li><a class="lista" href="#Notificacao">Notificação</a></li>
-                <li><a class="lista" href="cadastroUsuario.html">Cadastro</a></li>
+                <li>
+                    <a class="lista" onclick="botao('b','c','a')" href="#Cadastro">Cadastro</a>
+                    <ul>
+                            <li id="b" class="sublista"><a class="lista" href="cadasCond.html">Condominio</a></li>
+                            <li id="c" class="sublista"><a class="lista" href="cadasM.html">Morador</a></li>
+                            <li id="a" class="sublista"><a class="lista" href="cadasIm.html">Imovel</a></li>
+                    </ul>
+                </li>
                 <li><a class="lista" href="">Sair</a></li>
-            </div>
         </ul>
 
         <article class="corpo">
