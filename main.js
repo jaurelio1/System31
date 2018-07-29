@@ -9,8 +9,9 @@ function validarSenha(n,m){
     }
 }
 
-function botao(){
-        document.getElementById("l").style.display = "block";
-        document.getElementById("d").style.display = "block";
+function botao(n,m,b){
+        document.getElementById(n).style.display = "block";
+        document.getElementById(m).style.display = "block";
+        document.getElementById(b).style.display = "block";
  }
  
