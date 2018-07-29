@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Morador</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="jquery-3.3.1.js">
+    <script src="main.js"></script>
+</head>
+<body>
+
+        <ul class="navegador">
+            <div class="lista">
+                <li><a class="lista" href="paginaMorador.html">Inicial</a></li>
+                <li>
+                    <a onclick="botao()" class="lista" href="#informacao">Informação</a>
+                   <ul>
+                        <li id="l" class="sublista"><a class="lista" href="#configuracao">Configuração</a></li>
+                        <li id="d" class="sublista"><a class="lista" href="#dados">Dados de usuario</a></li>
+                    </ul>
+                </li>
+                <li><a class="lista" href="#Notificacao">Notificação</a></li>
+                <li><a class="lista" href="sobre.html">Sobre</a></li>
+                <li><a class="lista" href="#sair">Sair</a></li>
+                
+            </div>
+        </ul>        
+        <article class="corpo">
+            <div class="form-conf">
+                <div class="tab-box">
+                        <h2 style="color: #ea533f;"><i class="glyphicon glyphicon-log-in"></i>Configuração</h2>
+                    <form action="">
+                        <label for="nsenha">Nova Senha:</label>
+                        <input class="form-input" type="password" name="tnsenha" id="nsenha">
+                        <br>
+                        <label >Confima Senha:</label>
+                        <input class="form-input" type="password" name="tcsenha" id="csenha"><br>
+                        <div class="checkbox">
+                            <label class="control-label" for="remember_me">
+                                
+                        </div><br>
+                        <button type="submit" onclick="validarSenha('nsenha','csenha')" class="butao">Salva</button>
+                    </form>
+
+                </div>
+            </div>
+        </article>
+    
+</body>
+</html>
