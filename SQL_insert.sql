@@ -81,18 +81,18 @@ VALUES
     (1020, 5, 125.00, 480.00, 1, 1, 1, 1, FALSE, 'A', 45);
     
 INSERT INTO Morador_titular
-	(cpf, nome, sexo, num_imovel, cod_condom, renda, sindico, email, telefone)
+	(cpf, senha, nome, sexo, num_imovel, cod_condom, renda, sindico, email, telefone)
 VALUES
-    ('12345678955', 'Bruno', 'M', 1, 1, 1000.00, FALSE, 'bruno@gmail.com', '83977551122'),
-    ('12345678911', 'Carlos', 'M', 2, 1, 1000.00, FALSE, 'carlos@gmail.com', '83977551122'),
-    ('12345678944', 'Samantha', 'F', 10, 2, 5000.00, FALSE, 'samantha@gmail.com', '83977551122'),
-    ('12345678933', 'Vinicius', 'M', 20, 2, 5000.00, FALSE, 'vinicius@gmail.com', '83977551122'),
-    ('12345678922', 'Rafaela', 'F', 101, 3, 4000.00, FALSE, 'rafaela@gmail.com', '83977551122'),
-    ('12345678966', 'Vitor', 'M', 102, 3, 4000.00, FALSE, 'vitor@gmail.com', '83977551122'),
-    ('12345678988', 'Vitoria', 'F', 201, 4, 10000.00, FALSE, 'vitoria@gmail.com', '83977551122'),
-    ('12345678977', 'Raul', 'M', 202, 4, 10000.00, FALSE, 'raul@gmail.com', '83977551122'),
-    ('12345678999', 'Marcela', 'F', 1001, 5, 1500.00, FALSE, 'marcela@gmail.com', '83977551122'),
-    ('12345678123', 'Carla', 'F', 1005, 5, 1500.00, FALSE, 'carla@gmail.com', '83977551122');
+    ('12345678955', DEFAULT, 'Bruno', 'M', 1, 1, 1000.00, FALSE, 'bruno@gmail.com', '83977551122'),
+    ('12345678911', DEFAULT, 'Carlos', 'M', 2, 1, 1000.00, FALSE, 'carlos@gmail.com', '83977551122'),
+    ('12345678944', DEFAULT, 'Samantha', 'F', 10, 2, 5000.00, FALSE, 'samantha@gmail.com', '83977551122'),
+    ('12345678933', DEFAULT, 'Vinicius', 'M', 20, 2, 5000.00, FALSE, 'vinicius@gmail.com', '83977551122'),
+    ('12345678922', DEFAULT, 'Rafaela', 'F', 101, 3, 4000.00, FALSE, 'rafaela@gmail.com', '83977551122'),
+    ('12345678966', DEFAULT, 'Vitor', 'M', 102, 3, 4000.00, FALSE, 'vitor@gmail.com', '83977551122'),
+    ('12345678988', DEFAULT, 'Vitoria', 'F', 201, 4, 10000.00, FALSE, 'vitoria@gmail.com', '83977551122'),
+    ('12345678977', DEFAULT, 'Raul', 'M', 202, 4, 10000.00, FALSE, 'raul@gmail.com', '83977551122'),
+    ('12345678999', DEFAULT, 'Marcela', 'F', 1001, 5, 1500.00, FALSE, 'marcela@gmail.com', '83977551122'),
+    ('12345678123', DEFAULT, 'Carla', 'F', 1005, 5, 1500.00, FALSE, 'carla@gmail.com', '83977551122');
     
 INSERT INTO Morador_dependendente
 	(cpf, nome, sexo, email, telefone, cpf_titular)

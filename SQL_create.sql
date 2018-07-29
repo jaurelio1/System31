@@ -51,6 +51,7 @@ CREATE TABLE IF NOT EXISTS system31.Imovel (
 
 CREATE TABLE IF NOT EXISTS system31.Morador_titular (
     cpf VARCHAR(50) PRIMARY KEY,
+    senha VARCHAR(50) DEFAULT '123456',
     nome VARCHAR(50),
     sexo CHARACTER,
     num_imovel INTEGER,
