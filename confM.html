@@ -12,7 +12,7 @@
 <body>
 
         <ul class="navegador">
-            <div class="lista"></div>
+            <div class="lista">
                 <li><a class="lista" href="paginaMorador.html">Inicial</a></li>
                 <li>
                     <a onclick="botao()" class="lista" href="#informacao">Informação</a>
@@ -35,12 +35,11 @@
                         <label for="nsenha">Nova Senha:</label>
                         <input class="form-input" type="password" name="tnsenha" id="nsenha">
                         <br>
-                        <label for="">Confima Senha:</label>
+                        <label >Confima Senha:</label>
                         <input class="form-input" type="password" name="tcsenha" id="csenha"><br>
                         <div class="checkbox">
                             <label class="control-label" for="remember_me">
-                                <input type="checkbox" name="remember_me" id="remember_me" value="1" class="" tabindex="3" /> Aceito os Termos
-                            </label>
+                                
                         </div><br>
                         <button type="submit" onclick="validarSenha('nsenha','csenha')" class="butao">Salva</button>
                     </form>

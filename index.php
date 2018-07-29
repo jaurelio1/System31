@@ -34,10 +34,6 @@
     $res= mysqli_query($con, $sql);
     $linha = mysqli_fetch_object($res);
     
-    for ($i=0;$i<5;$i++) {
-        echo $linha[$i]->nome;
-        echo '</br>';
-    }
     ?>
 </body>
 </html>
