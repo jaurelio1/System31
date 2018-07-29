@@ -3,26 +3,33 @@ include_once 'Administrador.php';
 include_once 'Morador.php';
 include_once "Conexao.php";
 
-$login = $_POST["login_verifica"];
-$senha = $_POST["senha_verifica"];
+$cpf = $_POST["login"];
+$senha = $_POST["password"];
 
-$sql_busca_adm = "select * from system31.administrador as Adm where Adm.cpf='$cpf'";
-$sql_busca = "select * from system31.morador_titular as Mor where Mor.cpf='$cpf'";
- if ($dados=mysqli_query($con, $sql_busca_adm)){
+$sql_busca_adm = "select cpf, senha from system31.administrador as Adm where Adm.cpf='$cpf'";
+$sql_busca = "select cpf, senha from system31.morador_titular as Mor where Mor.cpf='$cpf'";
+$dados=mysqli_query($con, $sql_busca);
+$dados_adm=mysqli_query($con, $sql_busca_adm);
+
+ if ($dados_adm){
+     $linha = mysqli_fetch_array($dados_adm);
+     echo 'Achei usuario';
+ }elseif ($dados) {
      $linha = mysqli_fetch_array($dados);
- }elseif ($dados=mysqli_query($con, $sql_busca)) {
-     $linha = mysqli_fetch_array($dados);
+     echo 'Achei morador';
  }else{
      echo "Usuario não encontrado!";
  }     
 
 
 
-echo $linha["nome"];
+ print_r($linha);
 
-if ($linha["login"]){
+if ($linha["cpf"]){
     if($linha["senha"]==$senha){
-        echo 'CONECTADO';
+        header("Location: paginaAdm.php");
+        die("Entrando");
+        $usuario = $linha["cpf"];
     }else{
        echo 'SENHA INCORRETA';
     }

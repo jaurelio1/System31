@@ -16,23 +16,13 @@
 <nav >
     <ul>
         <li><a class="active" href="index.php">Home</a></li>
-        <li><a href="cadastroUsuario.html">Cadastro</a></li>
-        <li><a href="contato.html">Contato</a></li>
-        <li><a href="sobre1.html">Sobre</a></li>
-        <li style="float:right"><a href="login.html">Login</a></li>
+        <li><a href="cadastroUsuario.php">Cadastro</a></li>
+        <li><a href="sobre1.php">Sobre</a></li>
+        <li style="float:right"><a href="login.php">Login</a></li>
     </ul>
 </nav>
     <?php
-    $host = 'localhost';
-    $user = 'root';
-    $pass = '';
-    $db = 'system31';
-        
-    $con = mysqlI_connect($host, $user, $pass, $db);
-        
-    $sql = "select * from system31.administrador as A where 1";
-    $res= mysqli_query($con, $sql);
-    $linha = mysqli_fetch_object($res);
+    include_once 'Conexao.php';
     
     ?>
 </body>

@@ -10,8 +10,9 @@ function validarSenha(n,m){
 }
 
 function botao(n,m,b){
-    document.getElementById(n).classList.toggle('show');
-    document.getElementById(m).classList.toggle('show');
-    document.getElementById(b).classList.toggle('show');
-}
+        document.getElementById(n).style.display = "block";
+        document.getElementById(m).style.display = "block";
+        document.getElementById(b).style.display = "block";
+ }
+
  
