@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title> Consulta ao banco de dados </title>
+</head>
+<body>
+<h3>Formulário de Consulta de tabelas Completas</h3><br>
+<form name="Cadastro" action="consulta.php" method="POST">
+    <select name="Tabela">
+        <option value="C">Condomínio</option>
+        <option value="I">Imóvel</option>
+        <option value="A">Administrador</option>
+        <option value="T">Morador Titular</option>
+        <option value="D">Morador Dependente</option>
+        <option value="B">Boleto</option>
+    </select><br>
+    <input type="submit" name="consulta-completa" value="Consultar">
+</form>
+</body>
+</html>
