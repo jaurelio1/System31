@@ -56,6 +56,10 @@
                                         <input type="number" class="form-input" name="tquant" id="quant" size="11" maxlength="11" required/>
                                     </div>
                                     <br>
+                                    <div class="form-group">
+                                        <label for="rua" class="sr-only">UF:</label><br>
+                                        <input type="text" class="form-input" name="tuf" id="uf" placeholder="EX: Paraibe" required/>
+                                    </div>
                                     <div>
                                         <label for="cidade">Cidade:</label><br>
                                         <input type="text" class="form-input" name="tcidade" id="Cidade" placeholder="Ex: Campina Grande" required/>
@@ -63,7 +67,7 @@
                                     <br>
                                     <div class="form-group">
                                         <label for="cep"></label>Cep:</br>
-                                        <input type="number" class="form-input" name="trg" id="rg" placeholder="Cep" required/>
+                                        <input type="number" class="form-input" name="tcep" id="cep" placeholder="Cep" required/>
                                     </div>
                                     <br>
                                     <div class="form-group">
@@ -81,7 +85,7 @@
                                         <input type="number" class="form-input" name="tnum" id="num" size="6" maxlength="6" placeholder="EX: 100" required/>
                                     </div>
                                     </br>                
-                                    <button type="submit" onclick="validarSenha('pwd','cpwd')" class="butao">Criar</button>
+                                    <button type="submit" class="butao">Criar</button>
                                 </form>
                     </div>
                 </div>

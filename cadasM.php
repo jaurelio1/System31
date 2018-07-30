@@ -56,8 +56,8 @@
                                 
                                 <div class="form-group">
                                     <label for="sexo">Sexo:</label><br>
-                                    <input type="radio"  name="tsexo" id="Masc" checked required/><label style="font-size: 15px" for="Masc">Masculino</label>
-                                    <input type="radio"  name="tsexo" id="Fem" required/><label  style="font-size:15px" for="Fem">Feminino</label> </br>
+                                    <input type="radio" value="M" name="tsexo" id="Masc" checked required/><label style="font-size: 15px" for="Masc">Masculino</label>
+                                    <input type="radio" value="F" name="tsexo" id="Fem" required/><label  style="font-size:15px" for="Fem">Feminino</label> </br>
                                 </div>
                                 <br>
                                 <div class="form-group">

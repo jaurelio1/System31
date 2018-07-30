@@ -43,7 +43,6 @@ CREATE TABLE IF NOT EXISTS system31.Imovel (
     qtd_banheiros INTEGER DEFAULT 1,
     qtd_suites INTEGER,
     varanda BOOLEAN,
-    aluguel_ou_venda CHARACTER,
     area_metros_quadrado INTEGER,
     FOREIGN KEY (cod_condom) REFERENCES system31.Condominio (codigo),
     PRIMARY KEY(numero_imovel, cod_condom)

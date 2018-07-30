@@ -62,7 +62,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="qntq" class="sr-only">Vagas de Garagem:</label><br>
-                                    <input type="number" class="form-input" id="vagas_garagem" name="vagas_garagem" size="8" maxlength="8" placeholder="3" required/>
+                                    <input type="number" class="form-input" id="vagas_garagem" name="tvagas_garagem" size="8" maxlength="8" placeholder="3" required/>
                                 </div>
                                 </br>
                                 <div class="form-group">
@@ -71,13 +71,18 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="qntq" class="sr-only">Valor do Aluguel:</label><br>
-                                    <input type="number" class="form-input" id="alu_valor" name="alu_valor" size="8" maxlength="8" placeholder="400" required/>
+                                    <input type="number" class="form-input" id="alu_valor" name="talu_valor" size="8" maxlength="8" placeholder="400" required/>
                                 </div>
                                 <div class="form-group">
                                     <label for="qntq" class="sr-only">Valor do Condominio:</label><br>
-                                    <input type="number" class="form-input" id="cond_valor" name="cond_valor" size="8" maxlength="8" placeholder="400" required/>
+                                    <input type="number" class="form-input" id="cond_valor" name="tcond_valor" size="8" maxlength="8" placeholder="400" required/>
                                 </div>
                                 <p>
+                                <div class="checkbox">
+                                    <label class="control-label" for="varanda">
+                                        <input type="checkbox" name="tvaranda" id="varanda" value="true" tabindex="3" /> Varanda
+                                    </label>
+                                </div>
                                 <button type="submit" class="butao">Cadastrar</button>
                             </form>
                 </div>

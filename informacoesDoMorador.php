@@ -1,15 +1,19 @@
 <?php
-$cpf = $_POST[];
-$nome = $_POST[];
-$sexo = $_POST[];
-$data_nascimento = $_POST[];
-$renda = $_POST[];
-$num_imovel = $_POST[];
-$email = $_POST[];
-$telefone = $_POST[];
-$senha = $_POST[];
+$cpf = $_POST["tcpf"];
+$nome = $_POST["tnome"];
+$sexo = $_POST["tsexo"];
+$data_nascimento = $_POST["tdata"];
+$renda = $_POST["trenda"];
+$num_imovel = $_POST["tnum_imovel"];
+$email = $_POST["temail"];
+$telefone = $_POST["tnumero"];
+$senha = $_POST["tsenha"];
 
-$sql = "insert into system31.morador_titular (cpf, nome, sexo,data_nasc, renda, num_imovel,cod_condominio ,  email, telefone, senha) values ($cpf, '$nome','$data_nascimento', '$sexo', '$renda', '$num_imovel', '$cod_condominio', '$email', $telefone, '$senha');";
+$sql = "INSERT INTO Morador_titular
+	(cpf, senha, nome, sexo, num_imovel, cod_condom, renda, sindico, email, telefone)
+VALUES
+    ('$cpf', '$senha', '$nome', '$sexo', $num_imovel, $cod_condominio, $renda, 'false', '$email', '$telefone');";
+
 if(!$con){
     echo "Falha na conexão com o banco de dados!";
     

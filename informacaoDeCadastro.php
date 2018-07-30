@@ -4,23 +4,25 @@
     
         
 include_once 'Cenexao.php';
-$email = $_POST[];
-$senha = $_POST[];
-$cpf = $_POST[];
-$rg = $_POST[];
-$nome = $_POST[];
-$sexo = $_POST[];
-$data_nascimento = $_POST[];
-$cep = $_POST[];
-$bairro = $_POST[];
-$cidade = $_POST[];
-$uf = $_POST[];
-$numero = $_POST[];
-$telefone = $_POST[];
+$email = $_POST["temail"];
+$senha = $_POST["tsenha"];
+$cpf = $_POST["tcpf"];
+$rg = $_POST["trg"];
+$nome = $_POST["tnome"];
+$sexo = $_POST["tsexo"];
+$data_nascimento = $_POST["tdata"];
+$cep = $_POST["tcep"];
+$bairro = $_POST["tbairro"];
+$cidade = $_POST["tcidade"];
+$uf = $_POST["testado"];
+$numero = $_POST["tnum"];
+$telefone = $_POST["tnumero"];
 	
         
         
-$sql = "insert into system31.administrador (cpf, rg, nome, sexo,data_nasc, cep, bairro,cidade , uf, numero, email, senha, telefone) values ($cpf, $rg, '$nome','$data_nascimento', '$sexo', '$cep', '$bairro', '$cidade', '$uf', $numero, '$telefone');";
+$sql = "INSERT INTO Administrador
+	(cpf, rg, nome, sexo, email, telefone, senha, data_nascimento, rua, num_home, bairro, uf, cep, cidade, cod_condom)
+VALUES ('$cpf', '$rg', '$nome','$sexo', '$email', '$telefone', '$senha', '$data_nascimento', '$rua', $num_home, '$bairro','$uf','$cep','$cidade',0);";
 if(!$con){
     echo "Falha na conexão com o banco de dados!";
     

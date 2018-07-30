@@ -20,16 +20,18 @@ $dados_adm=mysqli_query($con, $sql_busca_adm);
  }else{
      echo "Usuario não encontrado!";
  }     
+ 
 
-
-
- print_r($linha);
 
 if ($linha["cpf"]){
     if($linha["senha"]==$senha){
         header("Location: paginaAdm.php");
         die("Entrando");
-        $usuario = $linha["cpf"];
+        session_start();
+        $_SESSION["email"] = $email;
+        $_SESSION["nome"]= $nome;
+        $_SESSION["senha"] = $senha;
+        $_SESSION["cpf"] = $cpf;
     }else{
        echo 'SENHA INCORRETA';
     }
