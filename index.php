@@ -23,6 +23,9 @@
 </nav>
     <?php
     include_once 'Conexao.php';
+    if(isset($_GET['id']) == 1){
+
+    }
     
     ?>
 </body>

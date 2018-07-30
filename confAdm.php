@@ -29,7 +29,7 @@
                         <li id="a" class="sublista"><a class="lista" href="cadasIm.php">Imovel</a></li>
                     </ul>
                 </li>
-                <li><a class="lista" href="index.php">Sair</a></li>
+                <li><a class="lista" href="index.php?id=1">Sair</a></li>
         </ul>
 
         <article class="corpo">

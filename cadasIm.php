@@ -8,8 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script type="text/javascript" src="main.js"></script>
 </head>
-<body>
-        
+<body>    
         <ul class="navegador">
             <h1>Administrador</h1>
                 <li><a class="lista" href="paginaAdm.php">Inicial</a></li>
@@ -29,17 +28,21 @@
                         <li id="a" class="sublista"><a class="lista" href="cadasIm.php">Imovel</a></li>
                     </ul>
                 </li>
-                <li><a class="lista" href="index.php">Sair</a></li>
+                <li><a class="lista" href="index.php?id=1">Sair</a></li>
         </ul>
 
         <article class="corpo">
             <div class="form-conf">
                     <div class="tab-box">
                             <h2 style="color: #ea533f" ><i class="glyphicon glyphicon-log-in"></i>Cadastro de Imovel</h2>
-                            <form method="post" action="informacaoDeCadastro.php" accept-charset="utf-8" role="form" class="form-inline" >
+                            <form method="post" action="informacoesDeImovel.php" accept-charset="utf-8" role="form" class="form-inline" >
                                 <div class="form-group">
                                     <label for="cpf">CPF Do Morador:</label></br>
-                                    <input type="number" class="form-input" name="tcpf" id="cpf" size="11" maxlength="11" placeholder="CPF" required/>
+                                    <input type="text" class="form-input" name="tcpf" id="cpf" size="11" maxlength="11" placeholder="CPF" required/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="cpf">CPF Do Administrador:</label></br>
+                                    <input type="text" class="form-input" name="tcpf_adm" id="cpf" size="11" maxlength="11" placeholder="CPF" required/>
                                 </div>
                                 </br>
                                 <div class="form-group">

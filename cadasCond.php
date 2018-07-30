@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-        
+      
         <ul class="navegador">
         <h1>Administrador</h1>
                 <li><a class="lista" href="paginaAdm.html">Inicial</a></li>
@@ -37,7 +37,7 @@
                         <li id="a" class="sublista"><a class="lista" href="cadasIm.php">Imovel</a></li>
                     </ul>
                 </li>
-                <li><a class="lista" href="index.php">Sair</a></li>
+                <li><a class="lista" href="index.php?id=1">Sair</a></li>
     
         </ul>
 
@@ -45,10 +45,15 @@
                 <div class="form-conf">
                         <div class="tab-box">
                                 <h2 style="color: #ea533f" ><i class="glyphicon glyphicon-log-in"></i>Cadastro de Condominio</h2>
-                                <form method="post" action="informacaoDeCadastro.php" accept-charset="utf-8" role="form" class="form-inline" >
+                                <form method="post" action="informacoesDoCondominio.php" accept-charset="utf-8" role="form" class="form-inline" >
                                     <div class="form-group">
                                         <label for="nome">Nome:</label></br>
                                         <input type="text" class="form-input" name="tnome" id="nome" size="15" maxlength="50" placeholder="Nome" required/>
+                                    </div>
+                                    </br>
+                                    <div class="form-group">
+                                        <label for="nome">CPF do Administrador:</label></br>
+                                        <input type="text" class="form-input" name="tcpf_adm" id="nome" size="15" maxlength="50" placeholder="Nome" required/>
                                     </div>
                                     </br>
                                     <div class="form-group">

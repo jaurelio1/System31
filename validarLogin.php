@@ -14,26 +14,25 @@ $dados_adm=mysqli_query($con, $sql_busca_adm);
  if ($dados_adm){
      $linha = mysqli_fetch_array($dados_adm);
      echo 'Achei usuario';
+     $tipo = 1;
  }elseif ($dados) {
      $linha = mysqli_fetch_array($dados);
      echo 'Achei morador';
+     $tipo = 0;
  }else{
      echo "Usuario não encontrado!";
+     $tipo = 15;
  }     
  
 
 
-if ($linha["cpf"]){
+if ($linha["cpf"] && $tipo!=15){
     if($linha["senha"]==$senha){
         header("Location: paginaAdm.php");
         die("Entrando");
-        session_start();
-        $_SESSION["email"] = $email;
-        $_SESSION["nome"]= $nome;
-        $_SESSION["senha"] = $senha;
-        $_SESSION["cpf"] = $cpf;
     }else{
        echo 'SENHA INCORRETA';
+       
     }
 }
 

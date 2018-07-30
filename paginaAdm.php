@@ -9,7 +9,7 @@
     <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    
+
         <ul class="navegador">
                 <h1>Administrador</h1>
                 <li><a class="lista" href="paginaAdm.php">Inicial</a></li>
@@ -29,7 +29,7 @@
                             <li id="a" class="sublista"><a class="lista" href="cadasIm.php">Imovel</a></li>
                     </ul>
                 </li>
-                <li><a class="lista" href="index.php">Sair</a></li>
+                <li><a class="lista" href="index.php?id=1">Sair</a></li>
               
         </ul>
 

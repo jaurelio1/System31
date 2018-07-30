@@ -10,7 +10,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-        
+     
         <ul class="navegador">
                 <li><a class="lista" href="paginaMorador.php">Inicial</a></li>
                 <li><a class="lista" href="contato.php">Contato</a></li>

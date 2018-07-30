@@ -17,7 +17,6 @@ $cidade = $_POST["tcidade"];
 $uf = $_POST["testado"];
 $numero = $_POST["tnum"];
 $telefone = $_POST["tnumero"];
-	
         
         
 $sql = "INSERT INTO Administrador

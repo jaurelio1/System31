@@ -1,19 +1,6 @@
 CREATE DATABASE IF NOT EXISTS system31 DEFAULT CHARACTER SET = utf8;
 
 USE system31;
-
-CREATE TABLE IF NOT EXISTS system31.Condominio  (
-    codigo INTEGER PRIMARY KEY AUTO_INCREMENT,
-    nome VARCHAR(50),
-    uf VARCHAR(2),
-    cidade VARCHAR(50),
-    bairro VARCHAR(50),
-    rua VARCHAR(50),
-    numero INTEGER,
-    cep INTEGER,
-    qtd_imoveis INTEGER
-);
-
 CREATE TABLE IF NOT EXISTS system31.Administrador (
     cpf VARCHAR(50) PRIMARY KEY,
     rg VARCHAR(50),
@@ -29,9 +16,22 @@ CREATE TABLE IF NOT EXISTS system31.Administrador (
     uf VARCHAR(2),
     cep INTEGER,
     cidade VARCHAR(50),
-    cod_condom INTEGER,
-    FOREIGN KEY (cod_condom) REFERENCES system31.Condominio (codigo)
 );
+
+CREATE TABLE IF NOT EXISTS system31.Condominio  (
+    codigo INTEGER PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(50),
+    uf VARCHAR(2),
+    cidade VARCHAR(50),
+    bairro VARCHAR(50),
+    rua VARCHAR(50),
+    numero INTEGER,
+    cep INTEGER,
+    qtd_imoveis INTEGER,
+    cpf_adm varchar(50),
+    FOREIGN KEY (cpf_adm) REFERENCES system31.Administrador (cpf)
+);
+
 
 CREATE TABLE IF NOT EXISTS system31.Imovel (
     numero_imovel INTEGER,
@@ -44,8 +44,9 @@ CREATE TABLE IF NOT EXISTS system31.Imovel (
     qtd_suites INTEGER,
     varanda BOOLEAN,
     area_metros_quadrado INTEGER,
-    FOREIGN KEY (cod_condom) REFERENCES system31.Condominio (codigo),
-    PRIMARY KEY(numero_imovel, cod_condom)
+    cpf_adm varchar(50),
+    FOREIGN KEY (cpf_adm) REFERENCES system31.Administrador (cpf),
+    PRIMARY KEY(numero_imovel)
 );
 
 CREATE TABLE IF NOT EXISTS system31.Morador_titular (
@@ -59,7 +60,8 @@ CREATE TABLE IF NOT EXISTS system31.Morador_titular (
     sindico BOOLEAN DEFAULT FALSE,
 	email VARCHAR(50),
     telefone VARCHAR(50),
-    FOREIGN KEY (cod_condom) REFERENCES system31.Condominio (codigo),
+    cpf_adm varchar(50),
+    FOREIGN KEY (cpf_adm) REFERENCES system31.Administrador (cpf),
     FOREIGN KEY (num_imovel) REFERENCES system31.Imovel (numero_imovel)
 );
 
